@@ -1,4 +1,3 @@
-import React from "react";
 import StepItem from "../../moleculs/StepItem";
 
 export default function TransactionStep() {

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import Auth from "./Auth";
 import Menu from "./Menu";
 import ToggleMenu from "./ToggleMenu";
