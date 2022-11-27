@@ -1,6 +1,5 @@
 import cx from "classnames";
 import Link from "next/link";
-import React from "react";
 interface MenuProps {
   title: string;
   active?: boolean;
