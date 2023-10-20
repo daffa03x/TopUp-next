@@ -1,14 +1,6 @@
-import { useEffect, useState } from "react";
 import GameItem from "../../moleculs/GameItem";
-import axios from "axios";
 
 export default function FeaturedGame() {
-  const [gameList, setGameList] = useState([]);
-  useEffect(async () => {
-    const respone = await axios.get("http://localhost:4000/api/v1/players/landingpage");
-    setGameList(respone.data.data);
-    console.log("data", respone.data);
-  }, []);
   return (
     <section className="featured-game pt-50 pb-50">
       <div className="container-fluid">
@@ -17,9 +9,7 @@ export default function FeaturedGame() {
           <br /> Games This Year
         </h2>
         <div className="d-flex flex-row flex-lg-wrap overflow-setting justify-content-lg-between gap-lg-3 gap-4" data-aos="fade-up">
-          {gameList.map((item) => {
-            return <GameItem key={item._id} title={item.name} category={item.category.name} thumbnail={`http://localhost:4000/uploads/${item.thumbnail}`} />;
-          })}
+          <GameItem title="Test" category="Test" thumbnail="1.jpg" />
         </div>
       </div>
     </section>
