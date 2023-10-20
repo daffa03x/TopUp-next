@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import { useEffect } from "react";
-import AOS from "aos";
+// import { useEffect } from "react";
+// import AOS from "aos";
 import Navbar from "../components/organism/Navbar";
 import MainBanner from "../components/organism/MainBanner";
 import TransactionStep from "../components/organism/TransactionStep";
@@ -10,9 +10,9 @@ import Story from "../components/organism/Story";
 import Footer from "../components/organism/Footer";
 
 const Home: NextPage = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
   return (
     <>
       <Navbar />
