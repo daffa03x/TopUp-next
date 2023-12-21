@@ -1,4 +1,3 @@
-
 export default function Transactions() {
   return (
     <section className="transactions overflow-auto">

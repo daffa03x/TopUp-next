@@ -27,7 +27,7 @@ export default function Detail() {
       console.log("Route Sudah Tersedia", getVoucherDetailAPI(query.id));
       getVoucherDetailAPI(query.id);
     } else {
-      console.log("Console Tidak Tersedia");
+      console.log("Route Tidak Tersedia");
     }
   }, [isReady]);
   return (
